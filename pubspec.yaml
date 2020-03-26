@@ -5,12 +5,6 @@ version: 0.1.0
 dependencies:
   args: ^1.5.3
 
-  ## for testing:
-  timeago: ^2.0.26
-
-#   dartrix:
-#     path: ../dartrix
-
 environment:
   sdk: '>=2.6.0 <3.0.0'
 
