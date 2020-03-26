@@ -1,0 +1,56 @@
+name: hello-clojure
+version: 0.1.0
+docstring: A Hello World template, in Clojure
+description: Generates a Clojure app that prints a hello msg.
+
+params:
+
+- name       : 'greeting'
+  abbr       : 'g'
+  docstring  : 'Greeting'
+  # help       : ''
+  typeHelp   : 'string'
+  defaultsTo : 'Hello'
+
+- name       : 'to'
+  abbr       : 't'
+  docstring  : 'Addressee of msg'
+  typeHelp   : 'string'
+  defaultsTo : 'World'
+
+- name: 'app'
+  abbr: 'a'
+  docstring: 'Application'
+  help: 'APplication name'
+  typeHelp: 'string'
+  defaultsTo: 'hello-clj'
+  seg:     'APP'
+
+- name: 'pkg'
+  abbr: 'p'
+  docstring: 'Package.'
+  help: 'Package name, in reverse domain notation.'
+  typeHelp: 'segmented.string'
+  defaultsTo: 'org.example'
+  hook: 'java-pkg'
+
+- name: 'dept'
+  abbr: 'd'
+  docstring: 'Department.'
+  help: 'Department. Forms part of the package URL/path, e.g. org.example.department'
+  typeHelp: 'string'
+  defaultsTo: 'hello'
+  seg: 'DEPT'
+
+- name: 'ns-lss'
+  abbr: 'l'
+  docstring: 'Namespace Least Significant Segment.'
+  help: 'LSS of namespace = rightmost segment.'
+  typeHelp: 'string'
+  defaultsTo: 'core'
+  seg: 'CLASS'
+
+note: >
+  The Clojure namespace will be constructed from  pkg, dept, and ns-lss.
+
+  Default is org.example.hello.core, which corresponds to org/example/hello/core.clj.

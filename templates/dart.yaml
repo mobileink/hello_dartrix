@@ -1,0 +1,57 @@
+name: hello
+version: 0.1.0
+docstring: A simple template
+description: Generates a Dart app that prints a hello msg.
+
+params:
+
+- name: 'salutation'
+  abbr: 's'
+  docstring: 'A salutation.'
+  help: 'A salutation like "Dear" or "Dearest".'
+  typeHelp: 'string'
+  defaultsTo: 'Dear'
+
+- name: 'to'
+  abbr: 't'
+  docstring: 'Addressee.'
+  help: 'Entity to whom message is addressed.'
+  typeHelp: 'string'
+  defaultsTo: 'World'
+
+- name: 'greeting'
+  abbr: 'g'
+  docstring: 'Greeting msg.'
+  help: 'A greeting like "Hello" or "Salut".'
+  typeHelp: 'string'
+  defaultsTo: 'Hello'
+
+- name: 'closing'
+  abbr: 'c'
+  docstring: 'Closing salutation'
+  help: 'Closing phrase of message'
+  typeHelp: 'string'
+  defaultsTo: 'Sincerely'
+
+- name: 'from'
+  abbr: 'f'
+  docstring: 'Originator of message'
+  # help: ''
+  typeHelp: 'string'
+  defaultsTo: 'Dart'
+
+- name: 'app'
+  abbr: 'a'
+  docstring: 'Application'
+  help: 'APplication name'
+  typeHelp: 'string'
+  defaultsTo: 'hello-dart'
+  seg:     'APP'
+
+# - name: 'pkg'
+#   abbr: 'p'
+#   docstring: 'Output directory.'
+#   help: 'Directory relative to current working directory.'
+#   typeHelp: 'dir'
+#   defaultsTo: 'hello'
+#   seg:     'PKG'
