@@ -53,3 +53,10 @@ params:
   docstring  : Application website.
   type       : URL
   defaultsTo : https://www.mycompany.com
+
+- name       : source
+  docstring  : Source path.
+  type       : subpath
+  defaultsTo : src/main/java
+  help       : The source directory structure for the generated project.
+  seg        : SRC
