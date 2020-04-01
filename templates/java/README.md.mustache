@@ -1,0 +1,11 @@
+# {{rdomain}}.{{subdomain}}.{{class}}
+
+Hello World in Java
+
+```
+$ pub global run dartrix:new hello -t java -a {{_out_prefix}} -d {{domain}} -d {{subdomain}} -c {{class}} -g {{greeting}}
+$ cd {{_out_prefix}}
+$ javac {{segmap.SRC}}/{{segmap.RDOMAIN}}/{{subdomain}}/{{class}}.java
+$ java -cp {{segmap.SRC}} {{rdomain}}.{{subdomain}}.{{class}}
+{{greeting}}, {{addressee}}
+```

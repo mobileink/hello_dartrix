@@ -1,13 +1,14 @@
 name: hello_dartrix
-description: Dartrix template plugin package.  Contains templates for "Hello World" in various programming languages.
+docstring: New templates for a Hello World program in various languages.
+description: A Dartrix template plugin package.  Contains templates for "Hello World" in various programming languages.
 homepage: https://github.com/mobileink/hello_dartrix
-version: 0.1.1
+version: 0.2.0
 
 dependencies:
   args: ^1.5.3
 
 dartrix:
-  version: 0.1.18-alpha
+  version: 0.1.24-alpha
 
 environment:
   sdk: '>=2.6.0 <3.0.0'
