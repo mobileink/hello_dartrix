@@ -1,11 +1,10 @@
-# {{rdomain}}.{{subdomain}}.{{class}}
+# {{dartrix.ns}}{{#dartrix.nsx}}.{{dartrix.nsx}}{{/dartrix.nsx}}.{{class}}
 
 Hello World in Java (Maven version)
 
 ```
-$ pub global run dartrix:new hello -t maven
-$ cd {{_out_prefix}}
+$ cd {{dartrix.out}}
 $ mvn package
-$ java -cp target/{{subdomain}}-0.1.0.jar {{rdomain}}.{{subdomain}}.{{class}}
+$ java -cp target/{{dartrix.out}}-0.1.0.jar {{dartrix.ns}}{{#dartrix.nsx}}.{{dartrix.nsx}}{{/dartrix.nsx}}.{{class}}
 {{greeting}}, {{addressee}}
 ```

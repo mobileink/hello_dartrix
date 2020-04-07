@@ -6,49 +6,39 @@ description  : Generates a Clojure app that prints a hello msg.
 dartrix      : 0.1.24-alpha
 
 params:
+  sys:
+    - id: out
+      defaultsTo: hello_clj
+    - id: ns
+    - id: nsx
+      defaultsTo: greeting
 
-- name       : greeting
-  abbr       : g
-  docstring  : Greeting
-  type       : string
-  defaultsTo : Hello
-
-- name       : addressee
-  abbr       : a
-  docstring  : Addressee of msg
-  type       : string
-  defaultsTo : World
-
-- name       : out
-  abbr       : o
-  docstring  : Output directory
-  help       : Output path relative to current working directory.
-  type       : _out_prefix
-  defaultsTo : hello-clojure
-
-- name       : domain
-  abbr       : d
-  docstring  : Domain.
-  help       : Domain name, used to set namespace.
-  type       : segmented.string
-  defaultsTo : example.org
-
-- name       : subdomain
-  abbr       : s
-  docstring  : Subdomain.
-  help       : Subdomain. Forms part of the package URL/path, e.g. org.example.subdomain
-  type       : segmented.string
-  defaultsTo : greetings
-
-- name       : ns-lss
-  abbr       : l
-  docstring  : Namespace Least Significant Segment.
-  help       : LSS of namespace = rightmost segment.
-  type       : string
-  defaultsTo : core
-  seg        : CLASS
+  user:
+    - name       : greeting
+      abbr       : g
+      docstring  : Greeting
+      typeHint   : string
+      defaultsTo : Hello
+    - name       : addressee
+      abbr       : a
+      docstring  : Addressee of msg
+      typeHint   : string
+      defaultsTo : World
+    - name       : ns-lss
+      abbr       : l
+      docstring  : Namespace Least Significant Segment.
+      help       : LSS of namespace = rightmost segment.
+      typeHint   : string
+      defaultsTo : core
+      seg        : LSS
+    - name       : source
+      docstring  : Source path.
+      typeHint   : subpath
+      defaultsTo : src/main/clojure
+      help       : The source directory structure for the generated project.
+      seg        : SRC
 
 note         : >
-  The Clojure namespace will be constructed from domain (reversed), subdomain, and ns-lss.
+  The Clojure namespace will be constructed from ns, nsx, and ns-lss.
 
   Default is org.example.hello.core, which corresponds to org/example/hello/core.clj.

@@ -4,6 +4,6 @@ See the official [Quick Start](https://clojurescript.org/guides/quick-start) gui
 
 ```
 $ pub global dartrix:new hello -t clojurescript
-$ cd {{_out_prefix}}
-$ clj --main cljs.main --compile {{rdomain}}.{{subdomain}}.{{ns-lss}} --repl
+$ cd {{dartrix.out}}
+$ clj --main cljs.main --compile {{dartrix.ns}}{{#dartrix.nsx}}.{{dartrix.nsx}}{{/dartrix.nsx}}.{{ns-lss}} --repl
 ```
