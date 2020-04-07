@@ -1,9 +1,9 @@
 name         : clojurescript
-version      : 0.2.0
+version      : 0.2.1
 docstring    : A Hello World template, in ClojureScript
 description  : Generates a ClojureScript app that displays a hello msg.
 
-dartrix      : 0.1.24-alpha
+dartrix      : 0.2.0
 
 params:
   sys:

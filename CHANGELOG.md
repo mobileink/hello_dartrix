@@ -1,3 +1,7 @@
+## 0.2.1
+
+- Update everything to Dartrix 0.2.0
+
 ## 0.2.0
 
 - Switch <pkg>.yaml => <pkg>/dartrix.yaml

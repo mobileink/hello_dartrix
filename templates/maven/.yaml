@@ -1,9 +1,9 @@
 name         : maven
-version      : 0.2.0
+version      : 0.2.1
 docstring    : A Maven Hello World template, in Java
 description  : Generates a maven Java app that prints a hello msg.
 
-dartrix      : 0.1.24-alpha
+dartrix      : 0.2.0
 
 params:
   sys:
