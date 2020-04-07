@@ -2,7 +2,7 @@ name: hello_dartrix
 docstring: New templates for a Hello World program in various languages.
 description: A Dartrix template plugin package.  Contains templates for "Hello World" in various programming languages.
 homepage: https://github.com/mobileink/hello_dartrix
-version: 0.2.1
+version: 0.2.2
 
 dependencies:
   args: ^1.5.3

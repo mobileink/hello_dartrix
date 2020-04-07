@@ -1,3 +1,7 @@
+## 0.2.2
+
+- Add example/main.dart
+
 ## 0.2.1
 
 - Update everything to Dartrix 0.2.0
